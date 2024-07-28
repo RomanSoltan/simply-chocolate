@@ -1,0 +1,258 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111111;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.accent-color {
+  color: #fd9222;
+}
+
+.c-white {
+  color: #ffffff;
+}
+
+.bg-orange {
+  background-color: #fd9222;
+}
+
+.bg-white {
+  border: 1px solid #fd9222;
+  background-color: #ffffff;
+}
+
+.bg-blue {
+  background-color: #1e1823;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ======= Header start ======= */
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+
+.menu-link {
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #fd9222;
+}
+/* ======= Header end ======= */
+
+/* ======= Hero start ======= */
+.hero-section {
+  background-color: #1e1823;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.hero-btn {
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #fd9222;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+
+.hero-made-link {
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hero-made-link:hover,
+.hero-made-link:focus {
+  color: #fd9222;
+  border-color: #fd9222;
+  background-color: #ffffff;
+}
+
+.down-link {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.down-link:hover,
+.down-link:focus {
+  color: #fd9222;
+  background-color: #ffffff;
+}
+/* ======= Hero end ======= */
+
+/* ======= Benefits start ======= */
+.benefits-section {
+  background-color: #1e1823;
+}
+
+.benefits-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.benefits-text {
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* ======= Benefits end ======= */
+
+/* ======= Ingredients start ======= */
+.ingredients-text {
+  text-align: center;
+}
+
+.ingredients-item {
+  border-radius: 15px;
+}
+
+.ingredients-subtitle {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* ======= Ingredients end ======= */
+
+/* ======= Recipes start ======= */
+.recipes-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.recipes-list {
+  list-style-type: disc;
+  padding-left: 16px;
+}
+/* ======= Recipes end ======= */
+
+/* ======= Reviews start ======= */
+.reviews-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.reviews-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.reviews-text {
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.reviews-btn {
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+}
+
+.reviews-btn:hover,
+.reviews-btn:focus {
+  color: #fff;
+  background-color: #fd9222;
+}
+/* ======= Reviews end ======= */
+
+/* ======= Footer start ======= */
+.footer {
+  background-color: #1e1823;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  color: #ffffff;
+}
+
+.contacts-text {
+  font-weight: 500;
+  color: #fff;
+}
+
+.contacts-link {
+  color: #fff;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #fd9222;
+}
+/* ======= Footer end ======= */
