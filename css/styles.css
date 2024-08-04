@@ -68,8 +68,11 @@ ol {
   font-style: italic;
 }
 
+.section {
+  padding: 50px 0;
+}
+
 .section-title {
-  margin-top: 100px;
   margin-bottom: 50px;
   font-weight: 600;
   font-size: 24px;
@@ -240,7 +243,7 @@ ol {
 
 .ingredients-content {
   max-width: 486px;
-  margin: 100px auto 50px;
+  margin: 0 auto 50px;
 }
 
 .ingredients-title {
@@ -306,15 +309,24 @@ ol {
 /* ======= Recipes end ======= */
 
 /* ======= Reviews start ======= */
+.reviews-section {
+  padding-bottom: 100px;
+}
+
+.reviews-title {
+  margin-bottom: 90px;
+}
+
 .reviews-list {
   display: flex;
+  justify-content: center;
   gap: 28px;
 }
 
 .reviews-item {
   position: relative;
   padding: 56px 24px 24px;
-  margin-bottom: 50px;
+  margin-bottom: 85px;
   flex-basis: calc((100% - 56px) / 3);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
@@ -343,7 +355,7 @@ ol {
 
 .reviews-btn {
   display: block;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   font-weight: 600;
   font-size: 18px;
   color: #111111;
