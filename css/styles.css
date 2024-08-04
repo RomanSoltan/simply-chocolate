@@ -41,8 +41,8 @@ ol {
   color: #fd9222;
 }
 
-.c-white {
-  color: #ffffff;
+.bg-blue {
+  background-color: #1e1823;
 }
 
 .bg-orange {
@@ -54,8 +54,14 @@ ol {
   background-color: #ffffff;
 }
 
-.bg-blue {
-  background-color: #1e1823;
+.c-white {
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 .italic {
@@ -84,16 +90,32 @@ ol {
 }
 
 /* ======= Header start ======= */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
+  display: block;
+  padding: 28px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .menu-link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
+  padding: 30px 0;
 }
 
 .menu-link:hover,
@@ -104,21 +126,40 @@ ol {
 
 /* ======= Hero start ======= */
 .hero-section {
+}
+
+.hero-container {
+  border-radius: 30px;
   background-color: #1e1823;
+  padding: 381px 56px 40px 56px;
 }
 
 .hero-title {
+  max-width: 484px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.container-btn {
+  display: flex;
+  align-items: center;
 }
 
 .hero-btn {
   font-weight: 600;
   color: #ffffff;
   background-color: #fd9222;
+  font-size: 14px;
+  margin-right: 14px;
+  min-width: 144px;
+  height: 45px;
+  border: none;
+  border-radius: 100px;
+  padding: 14px 40px;
 }
 
 .hero-btn:hover,
@@ -128,10 +169,14 @@ ol {
 }
 
 .hero-made-link {
+  display: block;
   border: 1px solid #ffffff;
   border-radius: 100px;
   font-weight: 600;
   color: #ffffff;
+  padding: 14px 40px;
+  min-width: 183px;
+  height: 45px;
 }
 
 .hero-made-link:hover,
@@ -145,24 +190,41 @@ ol {
   font-weight: 500;
   letter-spacing: -0.03em;
   color: #ffffff;
+  margin-left: auto;
 }
 
 .down-link:hover,
 .down-link:focus {
   color: #fd9222;
-  background-color: #ffffff;
 }
 /* ======= Hero end ======= */
 
 /* ======= Benefits start ======= */
 .benefits-section {
+  margin-top: 72px;
+}
+
+.benefits-container {
+  padding: 50px 0;
   background-color: #1e1823;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 0 52px;
+}
+
+.benefits-item {
+  flex-basis: calc((100% - 140px) / 3);
 }
 
 .benefits-subtitle {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 
 .benefits-text {
