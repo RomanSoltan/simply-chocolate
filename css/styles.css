@@ -1,10 +1,21 @@
+:root {
+  --c-white: #ffffff;
+  --c-black: #111111;
+  --c-orange: #fd9222;
+  --c-violet: #1e1823;
+
+  --body-bg: #fafafa;
+
+  --font-family: 'Montserrat', sans-serif;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-family);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: #111111;
-  background-color: #fafafa;
+  color: var(--c-black);
+  background-color: var(--body-bg);
 }
 
 a {
@@ -38,24 +49,24 @@ ol {
 }
 
 .accent-color {
-  color: #fd9222;
+  color: var(--c-orange);
 }
 
 .bg-blue {
-  background-color: #1e1823;
+  background-color: var(--c-violet);
 }
 
 .bg-orange {
-  background-color: #fd9222;
+  background-color: var(--c-orange);
 }
 
 .bg-white {
-  border: 1px solid #fd9222;
-  background-color: #ffffff;
+  border: 1px solid var(--c-orange);
+  background-color: var(--c-white);
 }
 
 .c-white {
-  color: #ffffff;
+  color: var(--c-white);
 }
 
 .container {
@@ -66,10 +77,6 @@ ol {
 
 .italic {
   font-style: italic;
-}
-
-.section {
-  padding: 50px 0;
 }
 
 .section-title {
@@ -98,45 +105,80 @@ ol {
 /* ======= Header start ======= */
 .header-container {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
+}
+.nav {
+  display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 .logo {
+  position: relative;
   display: block;
   padding: 28px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.logo-icon {
+  position: relative;
+  top: 6px;
+  left: 0;
+  margin-left: 4px;
 }
 
 .menu {
   display: flex;
   align-items: center;
   gap: 24px;
+  margin-left: auto;
 }
 
 .menu-link {
-  display: block;
   font-weight: 500;
   line-height: 1.14;
-  padding: 30px 0;
+  padding: 32px 0;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #fd9222;
+  color: var(--c-orange);
+}
+
+.social-list {
+  display: flex;
+  gap: 18px;
+  margin-left: 90px;
+}
+.social-item {
+}
+.social-link {
+  padding: 28px 0;
+}
+.social-icon {
+  fill: var(--c-black);
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--c-orange);
 }
 /* ======= Header end ======= */
 
 /* ======= Hero start ======= */
 .hero-section {
+  margin-bottom: 72px;
 }
 
 .hero-container {
   border-radius: 30px;
-  background-color: #1e1823;
+  background-color: var(--c-violet);
   padding: 381px 56px 40px 56px;
 }
 
@@ -146,7 +188,7 @@ ol {
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--c-white);
   margin-bottom: 32px;
 }
 
@@ -156,9 +198,10 @@ ol {
 }
 
 .hero-btn {
+  font-family: var(--font-family);
   font-weight: 600;
-  color: #ffffff;
-  background-color: #fd9222;
+  color: var(--c-white);
+  background-color: var(--c-orange);
   font-size: 14px;
   margin-right: 14px;
   min-width: 144px;
@@ -170,16 +213,16 @@ ol {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: #fd9222;
+  color: var(--c-orange);
   background-color: #fcf1e0;
 }
 
 .hero-made-link {
   display: block;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--c-white);
   border-radius: 100px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--c-white);
   padding: 14px 40px;
   min-width: 183px;
   height: 45px;
@@ -187,32 +230,31 @@ ol {
 
 .hero-made-link:hover,
 .hero-made-link:focus {
-  color: #fd9222;
-  border-color: #fd9222;
-  background-color: #ffffff;
+  color: var(--c-orange);
+  border-color: var(--c-orange);
+  background-color: var(--c-white);
 }
 
 .down-link {
   font-weight: 500;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--c-white);
   margin-left: auto;
 }
 
 .down-link:hover,
 .down-link:focus {
-  color: #fd9222;
+  color: var(--c-orange);
 }
 /* ======= Hero end ======= */
 
 /* ======= Benefits start ======= */
 .benefits-section {
-  margin-top: 72px;
 }
 
 .benefits-container {
   padding: 50px 0;
-  background-color: #1e1823;
+  background-color: var(--c-violet);
 }
 
 .benefits-list {
@@ -223,13 +265,13 @@ ol {
 }
 
 .benefits-item {
-  flex-basis: calc((100% - 140px) / 3);
+  width: calc((100% - 140px) / 3);
 }
 
 .benefits-subtitle {
   font-weight: 600;
   font-size: 18px;
-  color: #fff;
+  color: var(--c-white);
   margin-bottom: 18px;
 }
 
@@ -240,6 +282,10 @@ ol {
 /* ======= Benefits end ======= */
 
 /* ======= Ingredients start ======= */
+
+.ingredients-section {
+  padding: 100px 0 50px;
+}
 
 .ingredients-content {
   max-width: 486px;
@@ -254,6 +300,7 @@ ol {
 .ingredients-text {
   text-align: center;
 }
+
 .ingredients-list {
   display: flex;
   justify-content: center;
@@ -261,7 +308,7 @@ ol {
 }
 
 .ingredients-item {
-  flex-basis: calc((100% - 57px) / 4);
+  width: calc((100% - 57px) / 4);
   height: 270px;
   padding: 28px 32px;
   border-radius: 15px;
@@ -276,6 +323,10 @@ ol {
 /* ======= Ingredients end ======= */
 
 /* ======= Recipes start ======= */
+.recipes-section {
+  padding: 50px 0;
+}
+
 .recipes-container {
   display: flex;
   gap: 20px;
@@ -288,6 +339,8 @@ ol {
 
 .recipes-content {
   padding: 32px;
+  border-radius: 15px;
+  background-color: var(--c-white);
 }
 
 .recipes-subtitle {
@@ -310,7 +363,7 @@ ol {
 
 /* ======= Reviews start ======= */
 .reviews-section {
-  padding-bottom: 100px;
+  padding: 50px 0 100px;
 }
 
 .reviews-title {
@@ -330,7 +383,7 @@ ol {
   flex-basis: calc((100% - 56px) / 3);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-  background-color: #ffffff;
+  background-color: var(--c-white);
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
 }
 
@@ -358,8 +411,8 @@ ol {
   margin: 0 auto;
   font-weight: 600;
   font-size: 18px;
-  color: #111111;
-  border: 1px solid #fd9222;
+  color: var(--c-black);
+  border: 1px solid var(--c-orange);
   border-radius: 100px;
   padding: 14px 40px;
   min-width: 222px;
@@ -368,14 +421,14 @@ ol {
 
 .reviews-btn:hover,
 .reviews-btn:focus {
-  color: #fff;
-  background-color: #fd9222;
+  color: var(--c-white);
+  background-color: var(--c-orange);
 }
 /* ======= Reviews end ======= */
 
 /* ======= Footer start ======= */
 .footer {
-  background-color: #1e1823;
+  background-color: var(--c-violet);
   padding-top: 50px;
   padding-bottom: 62px;
 }
@@ -393,7 +446,7 @@ ol {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
-  color: #ffffff;
+  color: var(--c-white);
 }
 
 .contacts {
@@ -402,7 +455,7 @@ ol {
 
 .contacts-text {
   font-weight: 500;
-  color: #fff;
+  color: var(--c-white);
   margin-bottom: 14px;
 }
 
@@ -411,12 +464,12 @@ ol {
 }
 
 .contacts-link {
-  color: #fff;
+  color: var(--c-white);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #fd9222;
+  color: var(--c-orange);
 }
 
 .footer .menu-link {
