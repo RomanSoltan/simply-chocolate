@@ -71,8 +71,8 @@ ol {
 
 .container {
   max-width: 1168px;
-  padding: 0 16px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .italic {
@@ -102,7 +102,7 @@ ol {
   overflow: hidden;
 }
 
-/* ======= Header start ======= */
+/*  #region ======= Header ======= */
 .header-container {
   display: flex;
   align-items: baseline;
@@ -155,8 +155,7 @@ ol {
   gap: 18px;
   margin-left: 90px;
 }
-.social-item {
-}
+
 .social-link {
   padding: 28px 0;
 }
@@ -169,9 +168,9 @@ ol {
 .social-link:focus .social-icon {
   fill: var(--c-orange);
 }
-/* ======= Header end ======= */
+/*  #endregion ======= Header ======= */
 
-/* ======= Hero start ======= */
+/* #region ======= Hero ======= */
 .hero-section {
   max-width: 1200px;
   margin: 0 auto 72px;
@@ -279,26 +278,54 @@ ol {
   fill: var(--c-white);
   background-color: var(--c-orange);
 }
-/* ======= Hero end ======= */
+/* #endregion ======= Hero end ======= */
 
-/* ======= Benefits start ======= */
+/* #region ======= Benefits ======= */
 .benefits-section {
+  max-width: 1200px;
+  background-color: var(--c-violet);
+  margin: 0 auto;
 }
 
 .benefits-container {
   padding: 50px 0;
-  background-color: var(--c-violet);
 }
 
 .benefits-list {
   display: flex;
   justify-content: center;
-  gap: 70px;
-  padding: 0 52px;
+  gap: 88px;
+  padding: 0 34px;
 }
 
 .benefits-item {
-  width: calc((100% - 140px) / 3);
+  width: calc((100% - 176px) / 3);
+  position: relative;
+}
+
+.benefits-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 124px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.benefits-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  margin-bottom: 22px;
+}
+.benefits-icon {
+  fill: #fd9222;
 }
 
 .benefits-subtitle {
@@ -312,9 +339,9 @@ ol {
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
-/* ======= Benefits end ======= */
+/* #endregion ======= Benefits ======= */
 
-/* ======= Ingredients start ======= */
+/* #region ======= Ingredients ======= */
 
 .ingredients-section {
   padding: 100px 0 50px;
@@ -353,9 +380,9 @@ ol {
   font-weight: 600;
   text-transform: uppercase;
 }
-/* ======= Ingredients end ======= */
+/* #endregion ======= Ingredients ======= */
 
-/* ======= Recipes start ======= */
+/* #region ======= Recipes ======= */
 .recipes-section {
   padding: 50px 0;
 }
@@ -392,9 +419,9 @@ ol {
 .recipes-item:not(:last-child) {
   margin-bottom: 24px;
 }
-/* ======= Recipes end ======= */
+/* #endregion ======= Recipes ======= */
 
-/* ======= Reviews start ======= */
+/* #region ======= Reviews ======= */
 .reviews-section {
   padding: 50px 0 100px;
 }
@@ -457,9 +484,9 @@ ol {
   color: var(--c-white);
   background-color: var(--c-orange);
 }
-/* ======= Reviews end ======= */
+/* #endregion ======= Reviews ======= */
 
-/* ======= Footer start ======= */
+/* #region ======= Footer ======= */
 .footer {
   background-color: var(--c-violet);
   padding-top: 50px;
@@ -508,4 +535,4 @@ ol {
 .footer .menu-link {
   padding: 24px 0;
 }
-/* ======= Footer end ======= */
+/* #endregion ======= Footer ======= */
