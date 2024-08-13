@@ -28,6 +28,7 @@ address {
 }
 
 button {
+  color: currentColor;
   cursor: pointer;
 }
 
@@ -39,6 +40,11 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 ul,
@@ -207,7 +213,6 @@ ol {
 }
 
 .hero-btn {
-  font-family: var(--font-family);
   font-weight: 600;
   color: var(--c-white);
   background-color: var(--c-orange);
@@ -368,10 +373,17 @@ ol {
 }
 
 .ingredients-item {
+  position: relative;
   width: calc((100% - 57px) / 4);
   height: 270px;
   padding: 28px 32px;
   border-radius: 15px;
+  overflow: hidden;
+  transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ingredients-item:hover {
+  border: 0;
 }
 
 .ingredients-subtitle {
@@ -379,6 +391,80 @@ ol {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--c-white);
+  padding: 20px;
+  transform: translateY(100%);
+  overflow: auto;
+
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ingredients-item:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.overlay-box {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.overlay-btn {
+  height: 24px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  border: 1px solid var(--c-orange);
+  border-radius: 35px;
+  padding: 6px 16px;
+  color: var(--c-white);
+  background-color: var(--c-orange);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-btn:focus,
+.overlay-btn:hover {
+  color: var(--c-orange);
+  background-color: var(--c-white);
+  border: 1px solid var(--c-orange);
+}
+
+.overlay-link {
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--c-black);
+  border: 1px solid var(--c-orange);
+  border-radius: 35px;
+  padding: 6px 16px;
+  min-width: 93px;
+  height: 24px;
+  background-color: var(--body-bg);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-link:hover,
+.overlay-link:focus {
+  color: var(--c-white);
+  background-color: var(--c-orange);
+  border: 1px solid var(--c-orange);
 }
 /* #endregion ======= Ingredients ======= */
 
