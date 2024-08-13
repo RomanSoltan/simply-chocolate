@@ -375,7 +375,6 @@ ol {
 .ingredients-item {
   position: relative;
   width: calc((100% - 57px) / 4);
-  height: 270px;
   padding: 28px 32px;
   border-radius: 15px;
   overflow: hidden;
@@ -386,8 +385,11 @@ ol {
   border: 0;
 }
 
+.ingredients-img {
+  margin-bottom: 36px;
+}
+
 .ingredients-subtitle {
-  margin-top: 32px;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
