@@ -439,6 +439,102 @@
       </div>
     </footer>
     <!-- ======= Footer end ======= -->
+    <!-- ======= Modal start ======= -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="close-btn-icon" width="" height="">
+            <use href=""></use>
+          </svg>
+        </button>
+        <p class="modal-text">
+          LEAVE A REVIEW ABOUT <span class="accent-color">OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <div class="modal-form-field">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="input-box">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+              />
+              <svg class="input-icon" width="" height="">
+                <use href=""></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-label" for="user-email">Email</label>
+            <div class="input-box">
+              <input
+                class="modal-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+              />
+              <svg class="input-icon" width="" height="">
+                <use href=""></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-label" for="user-phone">Phone number</label>
+            <div class="input-box">
+              <input
+                class="modal-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                pattern="^\+[0-9]{12}"
+                required
+              />
+              <svg class="input-icon" width="" height="">
+                <use href=""></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+
+          <div class="privacy-checkbox">
+            <input
+              class="privacy-input visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              required
+            />
+            <label class="privacy-label" for="user-privacy">
+              <span class="privac-icon-box">
+                <svg class="privacy-icon" width="" height="">
+                  <use href=""></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="modal-btn btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- ======= Modal end ======= -->
 
     <script src="./js/modal.js"></script>
   </body>
