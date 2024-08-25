@@ -1,4 +1,5 @@
 .hidden {
+  display: none;
 }
 :root {
   --c-white: #ffffff;
@@ -83,9 +84,9 @@ ol {
 }
 
 .container {
-  max-width: 1168px;
+  max-width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 .italic {
