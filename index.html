@@ -380,12 +380,38 @@
             How it's <span class="accent-color">made?</span>
           </h2>
           <div class="recipes-container">
-            <img
-              class="recipes-img"
-              src="./images/recipes/recipes-img.jpg"
-              alt="A man makes chocolate"
-              width="600"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/recipes/recipes-desk.jpg    1x,
+                  ./images/recipes/recipes-desk@2x.jpg 2x
+                "
+                width="600"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/recipes/recipes-tab.jpg    1x,
+                  ./images/recipes/recipes-tab@2x.jpg 2x
+                "
+                width="614"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="
+                  ./images/recipes/recipes-mob.jpg    1x,
+                  ./images/recipes/recipes-mob@2x.jpg 2x
+                "
+                width="335"
+              />
+              <img
+                class="recipes-img"
+                src="./images/recipes/recipes-desk.jpg"
+                alt="A man makes chocolate"
+                width="600"
+              />
+            </picture>
             <div class="recipes-content">
               <h3 class="recipes-subtitle">
                 Try our chocolates today and discover the perfect balance of
