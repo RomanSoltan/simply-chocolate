@@ -259,11 +259,9 @@ ol {
 /* #region ======= Hero ======= */
 .hero-section {
   max-width: 375px;
-  /* margin: 0 auto 72px; */
   margin: 0 auto;
   margin-bottom: 60px;
   border-radius: 30px;
-  /* padding: 381px 56px 40px 56px; */
   padding-top: 395px;
   padding-bottom: 20px;
   background-color: rgba(17, 17, 17, 0.4);
@@ -298,7 +296,6 @@ ol {
 .hero-title {
   max-width: 299px;
   font-weight: 500;
-  /* font-size: 28px; */
   font-size: 20px;
   line-height: 1.21;
   letter-spacing: -0.03em;
@@ -389,36 +386,20 @@ ol {
 
 /* #region ======= Benefits ======= */
 .benefits-section {
-  max-width: 1200px;
+  max-width: 375px;
   background-color: var(--c-violet);
   margin: 0 auto;
 }
 
 .benefits-container {
-  padding: 50px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .benefits-list {
   display: flex;
-  justify-content: center;
-  gap: 88px;
-  padding: 0 34px;
-}
-
-.benefits-item {
-  width: calc((100% - 176px) / 3);
-  position: relative;
-}
-
-.benefits-item:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: -18px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 124px;
-  background-color: rgba(255, 255, 255, 0.5);
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .benefits-icon-box {
@@ -431,6 +412,7 @@ ol {
   border-radius: 365px;
   margin-bottom: 22px;
 }
+
 .benefits-icon {
   fill: #fd9222;
 }
