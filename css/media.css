@@ -145,6 +145,35 @@
   .benefits-item {
     width: calc((100% - 60px) / 2);
   }
+
+  /* Ingredients */
+  .ingredients-section {
+    padding: 80px 0;
+  }
+
+  .ingredients-content {
+    max-width: 486px;
+    margin-bottom: 50px;
+  }
+
+  .ingredients-title {
+    max-width: 411px;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 28px;
+  }
+
+  .ingredients-list {
+    gap: 32px;
+  }
+
+  .ingredients-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .ingredients-item.order {
+    order: -1;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -220,5 +249,29 @@
     width: 1px;
     height: 124px;
     background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Ingredients */
+
+  .ingredients-section {
+    padding: 100px 0;
+  }
+
+  .ingredients-list {
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+
+  .ingredients-item {
+    width: calc((100% - 57px) / 4);
+    padding: 28px 32px;
+  }
+
+  .ingredients-item.order {
+    order: 0;
+  }
+
+  .ingredients-img {
+    margin-bottom: 36px;
   }
 }
