@@ -431,7 +431,8 @@ ol {
 /* #region ======= Ingredients ======= */
 
 .ingredients-section {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .ingredients-content {
@@ -599,7 +600,9 @@ ol {
 
 /* #region ======= Reviews ======= */
 .reviews-section {
-  padding: 50px 0 100px;
+  /* padding: 50px 0 100px; */
+  padding-top: 30px;
+  padding-top: 60px;
 }
 
 .reviews-title {
