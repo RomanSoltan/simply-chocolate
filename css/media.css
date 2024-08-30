@@ -253,6 +253,75 @@
     min-width: 128px;
     padding: 14px 28px;
   }
+
+  /* Modal */
+  .modal {
+    width: 517px;
+    height: 584px;
+    padding: 40px;
+  }
+
+  .modal .close-btn {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+    padding: 7px;
+  }
+
+  .modal-text {
+    max-width: 298px;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 40px;
+  }
+
+  .modal-form-field {
+    margin-bottom: 18px;
+  }
+
+  .modal-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .modal-input {
+    height: 68px;
+    font-size: 14px;
+    border-radius: 13px;
+    padding: 22px 24px 22px 62px;
+  }
+
+  .input-icon {
+    left: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-textarea {
+    min-height: 137px;
+    font-size: 14px;
+    border-radius: 13px;
+    padding: 22px 24px;
+  }
+
+  .modal-textarea::placeholder {
+    font-size: 18px;
+  }
+
+  .privacy-checkbox {
+    margin-bottom: 40px;
+  }
+
+  .privacy-label {
+    font-size: 14px;
+  }
+
+  .modal-btn {
+    min-width: 117px;
+    height: 45px;
+    padding: 14px 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -383,6 +452,11 @@
     padding: 17px 32px;
     min-width: 137px;
     height: 52px;
+  }
+
+  /* Modal */
+  .modal-textarea {
+    min-height: 162px;
   }
 }
 
