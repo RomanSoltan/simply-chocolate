@@ -631,26 +631,24 @@ ol {
 
 /* #region ======= Reviews ======= */
 .reviews-section {
-  /* padding: 50px 0 100px; */
   padding-top: 30px;
-  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .reviews-title {
-  margin-bottom: 90px;
+  margin-bottom: 74px;
 }
 
 .reviews-list {
   display: flex;
-  justify-content: center;
-  gap: 28px;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin-bottom: 32px;
 }
 
 .reviews-item {
   position: relative;
-  padding: 56px 24px 24px;
-  margin-bottom: 85px;
-  flex-basis: calc((100% - 56px) / 3);
+  padding: 56px 18px 42px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   background-color: var(--c-white);
@@ -659,8 +657,9 @@ ol {
 
 .reviews-img {
   position: absolute;
-  top: -40px;
-  left: 138px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -185%);
 }
 
 .reviews-subtitle {
@@ -680,13 +679,13 @@ ol {
   display: block;
   margin: 0 auto;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   color: var(--c-black);
   border: 1px solid var(--c-orange);
   border-radius: 100px;
-  padding: 14px 40px;
-  min-width: 222px;
-  height: 50px;
+  padding: 12px 28px;
+  min-width: 165px;
+  height: 41px;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
